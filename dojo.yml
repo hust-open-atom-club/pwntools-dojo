@@ -1,0 +1,13 @@
+id: pwntools
+
+name: Pwntools 学习
+
+type: tools
+
+award:
+  emoji: pwntools
+
+modules:
+
+  - id: pwntools
+    icon: Geodude
