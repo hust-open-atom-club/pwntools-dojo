@@ -2,7 +2,7 @@ name: Pwntools 使用入门
 challenges:
 
   - id: level-0-0
-    name: 教学关卡
+    name: Level 0.0 (教学关卡)
     level: 1
     
   - id: level-1-0
