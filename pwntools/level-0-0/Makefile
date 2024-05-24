@@ -1,4 +1,4 @@
-TARGET = pwntools-level0.0
+TARGET = pwntools-tutorials-level0.0
 CC     = gcc
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I ../../include ../../include/util.c
