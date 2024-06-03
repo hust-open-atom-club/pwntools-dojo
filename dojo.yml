@@ -8,8 +8,7 @@ award:
   emoji: pwntools
 
 modules:
-
   - id: pwntools
     icon: Onix
-  - id: Assembly & Disassembly
+  - id: assembly
     icon: Geodude
