@@ -10,4 +10,6 @@ award:
 modules:
 
   - id: pwntools
+    icon: Onix
+  - id: Assembly & Disassembly
     icon: Geodude

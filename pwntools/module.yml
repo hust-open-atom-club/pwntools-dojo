@@ -1,48 +1,20 @@
 name: Pwntools 使用入门
 challenges:
 
-  - id: level-0-0
-    name: Level 0.0 (教学关卡)
+  - id: teaching_level
+    name: 教学关卡
     level: 1
     
-  - id: level-1-0
-    name: Level 1.0
+  - id: packing-1
+    name: Packing Level 1
     level: 2
 
-  - id: level-1-1
-    name: Level 1.1
+  - id: packing-2
+    name: Packing Level 2
     level: 2
 
-  - id: level-2-0
-    name: Level 2.0
-    level: 2
-
-  - id: level-2-1
-    name: Level 2.1
-    level: 2
-
-  - id: level-2-2
-    name: Level 2.2
-    level: 2
-
-  - id: level-2-3
-    name: Level 2.3
-    level: 2
-
-  - id: level-2-4
-    name: Level 2.4
-    level: 2
-
-  - id: level-2-5
-    name: Level 2.5
-    level: 3
-
-  - id: level-2-6
-    name: Level 2.6
-    level: 3
-
-  - id: level-3-0
-    name: Level 3.0
+  - id: comprehensive-notebook
+    name: Comprehensive Notebook
     level: 3
 
 resources:
