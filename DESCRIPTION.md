@@ -16,9 +16,3 @@ Pwntools 是一个工具包（包含各种好用的小工具）与软件库，�
     - ROP
 - Utility
     - cyclic
-
-你可以使用下述 `python` 代码来引入 pwntools 库。
-
-```python
-from pwn import *
-```
