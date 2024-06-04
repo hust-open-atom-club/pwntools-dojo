@@ -22,7 +22,7 @@ resources:
     type: lecture
     video: "405113607"
     playlist: "BV1oG411o7A4"
-    slides: 2-pwntools
+    slides: 1-pwntools
   # - name: "gdb 结合 pwntools 调试教程"
   #   type: lecture
   #   video: "532863345"
