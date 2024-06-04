@@ -1,7 +1,7 @@
 name: Pwntools 使用入门
 challenges:
 
-  - id: teaching_level
+  - id: teaching-level
     name: 教学关卡
     level: 1
     
