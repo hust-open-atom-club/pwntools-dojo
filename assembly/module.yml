@@ -28,7 +28,3 @@ challenges:
   - id: asm-7
     name: Assembly & Disassembly Level 7
     level: 3
-
-  - id: comprehensive-notebook
-    name: Comprehensive Notebook
-    level: 3
