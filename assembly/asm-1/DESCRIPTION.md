@@ -8,25 +8,16 @@ rax = 0x12345678
 ```
 from pwn import *
 
-def print_lines(io):
-    info("Printing io received lines")
-    while True:
-        try:
-            line = io.recvline()
-            success(line.decode())
-        except EOFError:
-            break
-
 # Set architecture, os and log level
 context(arch="amd64", os="linux", log_level="info")
 
 # Load the ELF file and execute it as a new process.
 challenge_path = "/challenge/pwntools-tutorials-level2.0"
-
 p = process(challenge_path)
 
 # Send the payload after the string "(up to 0x1000 bytes): \n" is found.
-p.sendafter("Please give me your assembly in bytes", asm("NOP"))
+p.sendafter("Please give me your assembly in bytes", asm("mov rax, 0x12345678"))
 
-print_lines(p)
+# Receive and print all the outputs until EOF
+print(p.recvall().decode())
 ```
