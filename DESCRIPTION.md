@@ -12,3 +12,5 @@ Pwntools 是一个工具包（包含各种好用的小工具）与软件库，�
     - shellcraft, ROP
 - Utility
     - cyclic
+
+可以通过学习 [Pwntools Tutorials](https://github.com/Gallopsled/pwntools-tutorial) 学习 Pwntools。
