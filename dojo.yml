@@ -9,6 +9,6 @@ award:
 
 modules:
   - id: pwntools
-    icon: Onix
+    icon: 0095_Onix
   - id: assembly
-    icon: Geodude
+    icon: 0074_Geodude
