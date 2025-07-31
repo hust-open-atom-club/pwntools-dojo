@@ -1,1 +1,3 @@
-本关卡需要你阅读/challenge目录下的源代码，利用'pwntools'工具库中的'elf.symbols[]'获取secret_code的地址后填充secret_code的值，进而绕过验证读取'/flag'
+在二进制分析中，全局变量通常存储在.data或.bss段。通过解析ELF文件的符号表，我们可以定位这些关键变量的内存地址。
+
+本关卡要求你使用pwntools的符号表解析功能，使用elf.symbols[]找到程序中名为'target_value'的全局变量地址，并将该地址提交给程序来读取‘/flag’。

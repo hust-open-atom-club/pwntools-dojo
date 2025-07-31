@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include "util.h"  
+#include <stdlib.h>  
 void print_flag()
 {
 	char *p;
@@ -39,20 +38,17 @@ void verify_protections() {
     printf("4. RELRO level (none/partial/full): ");
     scanf("%19s", answers[3]);
 
-    // 验证答案
     for (int i = 0; i < 4; i++) {
         if (strcmp(answers[i], correct[i]) != 0) {
             printf("try again!\n");
             return;
         }
     }
-    print_flag(); // 全部正确才输出flag
+    print_flag(); 
 }
 
 int main() {
-    print_desc();
-    printf("Run 'checksec ./level3' and answer questions:\n");
+    printf("Run 'checksec ./level4' and answer questions:\n");
     verify_protections();
-    print_exit();
     return 0;
 }

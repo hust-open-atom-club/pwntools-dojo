@@ -1,4 +1,4 @@
-TARGET = level2
+TARGET = level6
 CC     = gcc
 CFLAGS = -Wall -Wextra -Werror -fno-stack-protector -no-pie -z execstack 
 

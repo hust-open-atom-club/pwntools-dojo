@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "util.h"  
-// 内置 flag 打印函数
+
 void print_flag()
 {
 	char *p;
@@ -25,16 +24,14 @@ void print_flag()
 	fclose(fp);
 }
 
-int secret_code = 0; 
+int target_value = 0x1234; 
 
 int main() {
-    print_desc();
-    char buf[100];
-    printf("Change secret_code to 1337!\n");
-    gets(buf); 
-    if (secret_code == 1337) {
+    printf("Find target_value address: ");
+    unsigned long addr;
+    scanf("%lx", &addr);
+    if(addr == (unsigned long)&target_value) {
         print_flag();
     }
-    print_exit();
     return 0;
 }

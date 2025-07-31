@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>  
-#include <stdlib.h>
+#include <stdlib.h>  
+
 void print_flag()
 {
 	char *p;
@@ -25,12 +25,10 @@ void print_flag()
 }
 
 int main() {
-    char* key_str = "GiveMeFlag";  
-    printf("Find address of 'GiveMeFlag': ");
-    
-    unsigned long addr;
-    scanf("%lx", &addr);
-    if(addr == (unsigned long)key_str) {
+    unsigned long entry;
+    printf("Enter the entry point address (hex): ");
+    scanf("%lx", &entry);
+    if (entry == (unsigned long)&main) {  
         print_flag();
     }
     return 0;

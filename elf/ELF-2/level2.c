@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "util.h"
 
 void print_flag()
 {
@@ -31,8 +30,6 @@ void target_function() {
 }
 
 int main() {
-    print_desc();
-    // 获取用户输入
     unsigned long got_addr, plt_addr;
     printf("Enter the address of target_function's GOT entry (hex): ");
     scanf("%lx", &got_addr);
@@ -45,7 +42,5 @@ int main() {
     } else {
         printf("Try again! Wrong addresses.\n");
     }
-    
-    print_exit();
     return 0;
 }

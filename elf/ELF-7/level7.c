@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>  
 #include <stdlib.h>
+
 void print_flag()
 {
 	char *p;
@@ -24,14 +24,13 @@ void print_flag()
 	fclose(fp);
 }
 
+int check = 0; 
+
 int main() {
-    char* key_str = "GiveMeFlag";  
-    printf("Find address of 'GiveMeFlag': ");
-    
-    unsigned long addr;
-    scanf("%lx", &addr);
-    if(addr == (unsigned long)key_str) {
+    if(check == 1) {
         print_flag();
+    } else {
+        printf("Try to change check to 1!\n");
     }
     return 0;
 }

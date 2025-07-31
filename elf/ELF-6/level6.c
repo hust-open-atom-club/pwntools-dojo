@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "util.h"  
 
 void print_flag()
 {
@@ -25,13 +24,9 @@ void print_flag()
 	fclose(fp);
 }
 
-
-void win() { print_flag(); } 
-
 int main() {
-    print_desc();
-    printf("Find win() address!\n");
-    getchar(); 
-    print_exit();
-    return 0;
+    printf("Find .text section address: ");
+    unsigned long addr;
+    scanf("%lx", &addr);
+    if (addr == (unsigned long)&main) print_flag(); // .text 包含 main
 }
