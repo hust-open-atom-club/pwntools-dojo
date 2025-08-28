@@ -1,30 +1,30 @@
 name: ELF文件解析
 challenges:
 
-  - id: ELF-1
-    name: level1
+  - id: elf-level-1
+    name: Level 1.0
     level: 2
 
-  - id: ELF-2
-    name: level2
+  - id: elf-level-2
+    name: Level 2.0
     level: 2
 
-  - id: ELF-3
-    name: level3
+  - id: elf-level-3
+    name: Level 3.0
     level: 2
 
-  - id: ELF-4
-    name: level4
+  - id: elf-level-4
+    name: Level 4.0
     level: 2
 
-  - id: ELF-5
-    name: level5
+  - id: elf-level-5
+    name: Level 5.0
     level: 2
 
-  - id: ELF-6
-    name: level6
+  - id: elf-level-6
+    name: Level 6.0
     level: 2
 
-  - id: ELF-7
-    name: level7
+  - id: elf-level-7
+    name: Level 7.0
     level: 3

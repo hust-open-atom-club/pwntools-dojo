@@ -14,5 +14,5 @@ modules:
     icon: 0095_Onix
   - id: assembly
     icon: 0074_Geodude
-  - id: ELF
+  - id: elf
     icon: 0010_Caterpie
