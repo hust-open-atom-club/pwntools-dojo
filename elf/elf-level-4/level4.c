@@ -11,12 +11,16 @@ void print_flag()
 
 	if (!fp) {
 		perror("[-] fopen failed");
+		return;
 	}
 
 	p = fgets(flag, sizeof(flag), fp);
 	if (!p) {
-		perror("[-] fgets failed");
+		if (ferror(fp)) {
+			perror("[-] fgets failed");
+		}
 		fclose(fp);
+		return;
 	}
 	
 	printf("%s", flag);
@@ -26,7 +30,7 @@ void print_flag()
 
 void verify_protections() {
     char answers[4][20];
-    const char *correct[] = {"yes", "no", "no", "partial"}; 
+    const char *correct[] = {"yes", "no", "no", "full"}; 
     
     printf("===== Protection Check =====\n");
     printf("1. Is NX enabled? (yes/no): ");

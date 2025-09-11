@@ -11,12 +11,16 @@ void print_flag()
 
 	if (!fp) {
 		perror("[-] fopen failed");
+		return;
 	}
 
 	p = fgets(flag, sizeof(flag), fp);
 	if (!p) {
-		perror("[-] fgets failed");
+		if (ferror(fp)) {
+			perror("[-] fgets failed");
+		}
 		fclose(fp);
+		return;
 	}
 	
 	printf("%s", flag);
@@ -24,13 +28,13 @@ void print_flag()
 	fclose(fp);
 }
 
-int check = 0; 
+int check = 1; 
 
 int main() {
-    if(check == 1) {
+    if(check == 0) {
         print_flag();
     } else {
-        printf("Try to change check to 1!\n");
+        printf("Try to change check to 0!\n");
     }
     return 0;
 }
