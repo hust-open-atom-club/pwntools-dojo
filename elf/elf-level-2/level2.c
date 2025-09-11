@@ -11,12 +11,16 @@ void print_flag()
 
 	if (!fp) {
 		perror("[-] fopen failed");
+		return;
 	}
 
 	p = fgets(flag, sizeof(flag), fp);
 	if (!p) {
-		perror("[-] fgets failed");
+		if (ferror(fp)) {
+			perror("[-] fgets failed");
+		}
 		fclose(fp);
+		return;
 	}
 	
 	printf("%s", flag);
