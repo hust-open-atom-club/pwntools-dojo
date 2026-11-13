@@ -1,8 +1,5 @@
-# elf-level-7：crackme（学生可复制的补丁目标）+ level7（SUID 校验端）
-#
-# 注意：crackme.c 刻意不在本仓库——dojo 部署会把挑战目录内所有非下划线开头
-# 的条目原样拷进 /challenge/，crackme 源码随包部署会破坏本关设计。源码由
-# 维护者私管（默认放 ../dev-src/crackme.c），仓库只交付成品二进制。
+# crackme 的源码不在本仓库，仓库只交付成品二进制。
+# 维护者源码默认位于 ../dev-src/crackme.c。
 
 TARGETS = crackme level7
 CC     = gcc
@@ -14,10 +11,10 @@ CRACKME_SRC = ../dev-src/crackme.c
 
 all: $(TARGETS)
 
-level7: level7.c sha256.c sha256.h
-	$(CC) $(CFLAGS) -o $@ level7.c sha256.c
+level7: level7.c
+	$(CC) $(CFLAGS) -o $@ level7.c
 
-# 重编译 crackme 后输出会变化，需重新提取并同步 level7.c 的摘要（见维护者 dev-src 工具）。
+# 重编译 crackme 后其输出会变化，需要重新提取并同步 level7.c 中的摘要。
 crackme:
 	@if [ ! -f $(CRACKME_SRC) ]; then \
 	    echo "crackme.c is maintainer-private and not shipped in this repo;" >&2; \
